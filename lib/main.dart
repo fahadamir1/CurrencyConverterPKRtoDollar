@@ -42,7 +42,8 @@ class _MyWidgetState extends State<MyWidget> {
                           color: Colors.black,
                           fontSize: 20,
                           fontWeight: FontWeight.w400)),
-                  Text("${number1.toString()}",
+                  Text(
+                      "${number1 != 0 ? number1.toStringAsFixed(2) : number1.toStringAsFixed(0)}",
                       style: const TextStyle(
                           color: Color.fromARGB(255, 5, 255, 18),
                           fontSize: 20,
